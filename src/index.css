@@ -23,11 +23,13 @@ a:hover {
 }
 
 body {
+  
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 100%;
   min-height: 100vh;
+
 }
 
 h1 {
@@ -66,3 +68,58 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  width:100vw;
+  margin-bottom: 10%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  
+  
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+
+.signup{
+  margin: auto;
+  border: 2px solid;
+  width: 300px !important;
+  padding: 20px !important;
+  background-color: #f9f9f9 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+
+

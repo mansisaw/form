@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../firebase";
 
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,10 +20,12 @@ const Login = () => {
     }
   };
 
+ 
   return (
     <div>
-      <h2>Login</h2>
-      <form onSubmit={handleLogin}>
+    
+      
+      <form onSubmit={handleLogin} className="signup" >
         <input
           type="email"
           placeholder="Email"
